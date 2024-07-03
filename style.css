@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #1A1A1A;
+    --blue: #00BFFF;
+    --golden: #FFD700;
+    --grey: #CCCCCC;
+}
+
+body {
+    background-color: var(--black);
+    color: white;
+    font-family: 'Merriweather', serif;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    height: 6rem;
+}
+
+.vulnprobe {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    font-size: 1.3rem;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+}
+
+.scanner {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+    transition: color 0.3s;
+}
+
+.nav-btn {
+    display: inline-block;
+    font-family: Poppins;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(45deg, #e7331a, #ffc82f);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.nav-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: left 0.5s ease;
+    z-index: 1;
+}
+
+.nav-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #0074a5, #ffc82f);
+}
+
+.nav-btn:hover:before {
+    left: 100%;
+}
+
+.nav-links li a:hover {
+    color: var(--blue);
+}
+
+.get-started {
+    background-color: var(--golden);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: black !important;
+    transition: background-color 0.3s;
+}
+
+.get-started:hover {
+    background-color: #1E90FF;
+}
+
+.section {
+    height: 100vh;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.section2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.section2 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--golden);
+}
+
+.section2 p {
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero {
+    height: calc(100vh - 8rem); /* Subtract the height of the navbar */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    width: 25rem;
+    margin-right: 10rem;
+    margin-left: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--golden);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--grey);
+}
+
+#link {
+    height: 2.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--grey);
+    color: var(--black);
+}
+
+#link::placeholder {
+    color: var(--black);
+}
+
+#scan-button {
+    background-color: var(--golden);
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scan-button:hover {
+    background-color: #DAA520; /* Darker shade of golden */
+}
+
+.right-side {
+    margin-left: 10rem;
+}
+
+.right-side img {
+    max-width: 100%;
+    height: 33rem;
+}
+
+.fp-watermark {
+    display: none !important;
+}
+
+#fp-nav ul li a span {
+    background: white !important;
+}
+
+#fp-nav ul li a.active span {
+    background: white !important;
+}
