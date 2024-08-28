@@ -3,35 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VulnProbe</title>
+    <meta name="description" content="VulnProbe is a free tool for website vulnerability hunting. Free Online Website Bug Finder. Think like a hacker, catch the hacker!">
+    <meta name="keywords" content="VulnProbe, vulnerability scanner, cyber security, website security, free tool">
+    <meta name="author" content="Moosa Imran">
+    <meta property="og:title" content="VulnProbe - Website Vulnerability Scanner">
+    <meta property="og:description" content="A free tool for hunting website vulnerabilities. Think like a hacker, catch the hacker! Free Online WEbsite Bug Finder">
+    <meta property="og:image" content="Assests/Icons/Logo.png">
+    <meta property="og:url" content="https://vulnprobe.com.com">
+    
+    <title>VulnProbe - Free Website Vulnerability Scanner</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Assests/Icons/48x48.png" type="image/x-icon">
     <link rel="shortcut icon" href="Assests/Icons/96x96.png" type="image/x-icon">
     <link rel="shortcut icon" href="Assests/Icons/192x192.png" type="image/x-icon">
+    
+    <!-- Schema.org Markup for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "VulnProbe",
+      "url": "https://vulnprobe.com",
+      "description": "A free tool for hunting website vulnerabilities.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "VulnProbe"
+      }
+    }
+    </script>
 </head>
 <body>
-    <div id="fullpage">
-        <div class="section section1">
-            <nav>
-                <div class="logo">
-                    <img class="logo_img" src="Assests/Icons/Logo.png" alt="Logo">
-                    <div class="vulnprobe">
-                        VulnProbe
-                        <span class="scanner">Scanner</span>
-                    </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="logo_img" src="Assests/Icons/Logo.png" alt="VulnProbe Logo">
+                <div class="vulnprobe">
+                    VulnProbe
+                    <span class="scanner">Scanner</span>
                 </div>
-                <ul class="nav-links">
-                    <li><a class="nav-btn" href="#home">Home</a></li>
-                    <li><a class="nav-btn" href="#features">Cool Tricks</a></li>
-                    <li><a class="nav-btn" href="#pricing">Cheap Thrills</a></li>
-                    <li><a class="nav-btn" href="#docs">Nerdy Stuff</a></li>
-                    <li><a class="nav-btn" href="#contact">Chat with Us</a></li>
-                    <li><a class="nav-btn" href="#signin">Cyber Secuirty</a></li>
-                    <!-- <li><a href="#getstarted" class="get-started">Dive In!</a></li> -->
-                </ul>
-            </nav>
-            
+            </div>
+            <ul class="nav-links">
+                <li><a class="nav-btn" href="#home">Home</a></li>
+                <li><a class="nav-btn" href="#features">Cool Tricks</a></li>
+                <li><a class="nav-btn" href="#pricing">Cheap Thrills</a></li>
+                <li><a class="nav-btn" href="#docs">Nerdy Stuff</a></li>
+                <li><a class="nav-btn" href="#contact">Chat with Us</a></li>
+                <li><a class="nav-btn" href="#signin">Cyber Security</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="fullpage">
+        <section class="section section1">
             <!-- Particles Container -->
             <div id="particles-js"></div>
 
@@ -40,7 +65,7 @@
                 <div class="hero-content">
                     <h1>Think Like a Hacker, Catch the Hacker!</h1>
                     <p>Welcome to VulnProbe, your free tool for hunting website vulnerabilities.</p>
-                    <input placeholder="Enter the URL of your website." type="text" name="link" id="link">
+                    <input placeholder="Enter the URL of your website." type="text" name="link" id="link" aria-label="Enter the URL of your website">
                     <button id="scan-button">Scan Now</button>
                 </div>
                 <!-- 3D Model or Image -->
@@ -48,14 +73,18 @@
                     <img src="Assests/Hacker.png" alt="3D Hacker Image">
                 </div>
             </section>
-        </div>
+        </section>
 
-        <div class="section section2">
+        <section class="section section2">
             <h1>404: Website Not Found... Just Kidding! 😜</h1>
             <h2>It's a Sneak Peek of VulnProbe! 😂</h2>
             <p>We're burning the midnight oil to bring you the full VulnProbe experience ASAP. Stay tuned!</p>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VulnProbe. All Rights Reserved. Developed by <a href="https://developer.vulnprobe.com">Moosa Imran</a></p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"></script>
